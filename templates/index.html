@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Legal Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-balance-scale"></i> Indian Legal Assistant</h1>
+            <p>Get AI-powered insights on Indian legal matters</p>
+        </header>
+        
+        <main>
+            <div class="app-card">
+                <form method="POST" action="/analyze" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="legal-issue">Describe your legal issue:</label>
+                        <textarea 
+                            id="legal-issue" 
+                            name="text" 
+                            rows="6" 
+                            placeholder="For example: My landlord in Delhi is trying to increase my rent by 30% without proper notice. I have been living here for 3 years with a registered rental agreement. What are my rights?"
+                            required></textarea>
+                    </div>
+                    
+                    <div class="file-upload">
+                        <label for="document-upload">
+                            <i class="fas fa-file-upload"></i> Upload Related Documents
+                            <input type="file" id="document-upload" name="file">
+                        </label>
+                        <span class="file-types">Supported formats: PDF, TXT, Images</span>
+                    </div>
+                    
+                    <div class="disclaimer">
+                        <i class="fas fa-info-circle"></i>
+                        <p>This tool provides general legal information and is not a substitute for professional legal advice.</p>
+                    </div>
+
+                    <button type="submit" class="primary-button">
+                        <i class="fas fa-search"></i> Analyze Legal Issue
+                    </button>
+                </form>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Legal Research</h3>
+                    <p>Searches across Indian legal databases including Indian Kanoon, Legislative.gov.in, and Supreme Court judgments.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Analysis</h3>
+                    <p>Provides plain-language explanations of relevant laws and potential courses of action.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Document Processing</h3>
+                    <p>Upload legal documents to get context-specific analysis and information.</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 Indian Legal Assistant - For educational purposes only</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </footer>
+    </div>
+    
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+/* static/css/style.css */
+/* Main Variables */
+:root {
+    --primary-color: #1a4b8c;
+    --primary-dark: #123b7a;
+    --primary-light: #2d5ea3;
+    --accent-color: #d98e04;
+    --accent-light: #f1a118;
+    --text-color: #333333;
+    --text-light: #666666;
+    --background-color: #f7f9fc;
+    --card-color: #ffffff;
+    --border-color: #e0e5eb;
+    --error-color: #d32f2f;
+    --success-color: #388e3c;
+    --info-color: #0288d1;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Header & Footer */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header p {
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+header h1 i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.back-link i {
+    margin-right: 0.5rem;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--text-light);
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+/* Main App Card */
+.app-card {
+    background-color: var(--card-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus, input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(26, 75, 140, 0.1);
+}
+
+.file-upload {
+    margin-bottom: 1.5rem;
+}
+
+.file-upload label {
+    display: inline-block;
+    background-color: var(--primary-light);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-upload label:hover {
+    background-color: var(--primary-color);
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-types {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.primary-button i {
+    margin-right: 0.5rem;
+}
+
+.primary-button:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+/* Disclaimer */
+.disclaimer {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff9e6;
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.disclaimer i {
+    color: var(--accent-color);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.disclaimer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--card-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    margin-bottom: 0.8rem;
+}
+
+.feature p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Results Page */
+.results-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 992px) {
+    .results-container {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    }
+}
+
+.analysis-panel, .legal-sources-panel {
+    background-color: var(--card-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.analysis-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.issue-badge {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.analysis-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.analysis-section:last-of-type {
+    border-bottom: none;
+}
+
+.analysis-section h3 {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.analysis-section h3 i {
+    margin-right: 0.5rem;
+}
+
+.laws-list {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.laws-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.laws-list li:before {
+    content: "§";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.recommendations {
+    padding-left: 1.5rem;
+}
+
+.recommendations li {
+    margin-bottom: 0.8rem;
+}
+
+.disclaimer-box {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f0f7ff;
+    border-left: 4px solid var(--info-color);
+    padding: 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.disclaimer-box i {
+    color: var(--info-color);
+    margin-right: 1rem;
+}
+
+.disclaimer-box p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Case Cards */
+.case-card {
+    background-color: #f9fbff;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s;
+}
+
+.case-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.case-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+}
+
+.case-header h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.source-badge {
+    background-color: var(--accent-light);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+
+.citation {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0.8rem;
+    font-style: italic;
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-badge {
+    background-color: #e9f2fe;
+    color: var(--primary-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.snippet {
+    background-color: #f5f5f5;
+    padding: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.case-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.case-link i {
+    margin-right: 0.4rem;
+}
+
+.no-cases {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+}
+
+.no-cases i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--border-color);
+}
+
+/* Error Messages */
+.error-message {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffebee;
+    border-left: 4px solid var(--error-color);
+    padding: 1.5rem;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 2rem;
+}
+
+.error-message i {
+    color: var(--error-color);
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.error-page {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.error-page i {
+    font-size: 4rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.error-page h2 {
+    margin-bottom: 1rem;
+}
+
+.error-page p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .back-link {
+        margin-top: 1rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .analysis-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .issue-badge {
+        margin-top: 0.5rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.app-card, .analysis-panel, .legal-sources-panel {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.case-card {
+    animation: fadeIn 0.3s ease forwards;
+    animation-delay: calc(var(--i, 0) * 0.1s);
+}

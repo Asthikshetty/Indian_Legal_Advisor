@@ -1,7 +1,4 @@
-# Indian_Legal_Advisor
-Advices for your legal issues
-
-# README.md
+ README.md
 # Indian Legal Assistant
 
 An AI-powered legal assistance tool that helps users understand Indian laws by scraping legal resources and providing analysis.

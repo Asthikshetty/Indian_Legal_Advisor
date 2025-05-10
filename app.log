@@ -1,0 +1,759 @@
+2025-05-10 22:54:40,823 - __main__ - WARNING - Redis not available, caching disabled
+2025-05-10 22:54:40,824 - __main__ - INFO - Google Gemini AI model initialized
+2025-05-10 22:55:28,125 - __main__ - INFO - Legal BERT classifier loaded
+2025-05-10 22:55:28,160 - __main__ - WARNING - Tesseract OCR not found. Image processing will be limited.
+2025-05-10 22:55:29,145 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.206:5000
+2025-05-10 22:55:29,147 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-10 22:55:39,155 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 22:55:39,403 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 22:55:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 22:55:39,593 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 22:55:39] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-10 22:55:40,495 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 22:55:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-10 22:55:50,176 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 22:55:50,281 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 22:55:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 22:55:50,523 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 22:55:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:01:48,258 - __main__ - WARNING - Redis not available, caching disabled
+2025-05-10 23:01:48,259 - __main__ - INFO - Google Gemini AI model initialized
+2025-05-10 23:01:51,950 - __main__ - INFO - Legal BERT classifier loaded
+2025-05-10 23:01:51,959 - __main__ - WARNING - Tesseract OCR not found. Image processing will be limited.
+2025-05-10 23:01:52,867 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.206:5000
+2025-05-10 23:01:52,869 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-10 23:01:56,062 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:01:56,222 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:01:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:01:56,390 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:01:56] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-10 23:08:18,613 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:08:18,631 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:08:18,717 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:08:20,423 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:08:20,448 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:08:20,511 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:08:20,619 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:08:20,640 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:08:20,703 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:08:43,322 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:08:43,373 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:08:43,423 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:08:44,438 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:08:44,455 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:08:44,522 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:08:44,599 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:08:44,613 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:08:44,675 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:08:44,818 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:08:44,839 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:08:44,890 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:08:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:09:41,556 - __main__ - WARNING - Redis not available, caching disabled
+2025-05-10 23:09:41,559 - __main__ - INFO - Google Gemini AI model initialized
+2025-05-10 23:09:45,563 - __main__ - INFO - Legal BERT classifier loaded
+2025-05-10 23:09:45,569 - __main__ - WARNING - Tesseract OCR not found. Image processing will be limited.
+2025-05-10 23:09:46,528 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.206:5000
+2025-05-10 23:09:46,535 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-10 23:10:27,917 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:10:28,236 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:10:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:10:28,501 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:10:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:10:28,891 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:10:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-10 23:10:36,919 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:10:36,952 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:10:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:10:37,044 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:10:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:10:38,375 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+    <span class="issue-badge">{{ analysis.issue_type }}</span>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:10:38,396 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:10:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:10:38,465 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:10:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:11:28,790 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:11:28,822 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:11:28,908 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:11:29,673 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:11:29,693 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:11:29,769 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:11:29,931 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:11:29,947 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:11:30,009 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:11:30,206 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:11:30,221 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:11:30,268 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:11:55,739 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:11:55,757 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:11:56,424 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:11:56,606 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-10 23:11:58,686 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\app.py", line 523, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\abhil\Desktop\Indian legal Assistant\templates\index.html", line 106, in top-level template code
+  File "C:\Users\abhil\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'analysis' is undefined
+2025-05-10 23:11:58,705 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-10 23:11:58,779 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:11:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:12:38,418 - __main__ - WARNING - Redis not available, caching disabled
+2025-05-10 23:12:38,420 - __main__ - INFO - Google Gemini AI model initialized
+2025-05-10 23:12:41,484 - __main__ - INFO - Legal BERT classifier loaded
+2025-05-10 23:12:41,492 - __main__ - WARNING - Tesseract OCR not found. Image processing will be limited.
+2025-05-10 23:12:42,407 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.206:5000
+2025-05-10 23:12:42,412 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-10 23:12:50,130 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:12:50] "GET / HTTP/1.1" 200 -
+2025-05-10 23:12:51,241 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:12:51] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-05-10 23:12:51,247 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:12:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:12:51,760 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:12:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-10 23:14:29,244 - __main__ - INFO - Processing query of length 76 characters
+2025-05-10 23:14:29,859 - __main__ - INFO - Generated search keywords: ['rent control', 'landlord', 'increased', 'rent']
+2025-05-10 23:14:32,291 - __main__ - INFO - Request to https://indiankanoon.org/search/: Status 200
+2025-05-10 23:14:34,530 - __main__ - ERROR - Error generating legal advice: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-10 23:14:34,981 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:14:34] "POST /analyze HTTP/1.1" 200 -
+2025-05-10 23:14:35,020 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:14:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:14:35,029 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:14:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-10 23:26:52,914 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:26:52] "GET / HTTP/1.1" 200 -
+2025-05-10 23:26:52,998 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:26:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:26:53,004 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:26:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-10 23:28:39,412 - __main__ - INFO - Processing query of length 284 characters
+2025-05-10 23:28:39,799 - __main__ - INFO - Generated search keywords: ['rent control', 'woman', 'living', 'Delhi.']
+2025-05-10 23:28:42,115 - __main__ - INFO - Request to https://indiankanoon.org/search/: Status 200
+2025-05-10 23:28:43,288 - __main__ - ERROR - Error generating legal advice: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-10 23:28:43,922 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:28:43] "POST /analyze HTTP/1.1" 200 -
+2025-05-10 23:28:43,944 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:28:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:28:43,966 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:28:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-10 23:30:22,639 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:30:22] "GET / HTTP/1.1" 200 -
+2025-05-10 23:30:22,718 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:30:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:30:22,760 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:30:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-10 23:31:34,542 - __main__ - INFO - Processing query of length 1820 characters
+2025-05-10 23:31:35,951 - __main__ - INFO - Generated search keywords: ['rent control', 'woman', 'living', 'Delhi.']
+2025-05-10 23:31:37,445 - __main__ - INFO - Request to https://indiankanoon.org/search/: Status 200
+2025-05-10 23:31:40,795 - __main__ - ERROR - Error generating legal advice: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-10 23:31:43,193 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:31:43] "POST /analyze HTTP/1.1" 200 -
+2025-05-10 23:31:43,211 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:31:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:31:43,251 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:31:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-10 23:33:11,324 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:33:11] "GET / HTTP/1.1" 200 -
+2025-05-10 23:33:11,397 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:33:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:33:11,415 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:33:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-10 23:34:27,136 - __main__ - INFO - Processing query of length 546 characters
+2025-05-10 23:34:27,601 - __main__ - INFO - Generated search keywords: ['rent control', 'woman', 'living', 'Delhi.']
+2025-05-10 23:34:29,122 - __main__ - INFO - Request to https://indiankanoon.org/search/: Status 200
+2025-05-10 23:34:30,303 - __main__ - ERROR - Error generating legal advice: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-10 23:34:30,982 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:34:30] "POST /analyze HTTP/1.1" 200 -
+2025-05-10 23:34:31,003 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:34:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:34:31,048 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:34:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-05-10 23:46:19,958 - __main__ - INFO - Processing query of length 546 characters
+2025-05-10 23:46:20,414 - __main__ - INFO - Generated search keywords: ['rent control', 'woman', 'living', 'Delhi.']
+2025-05-10 23:46:22,312 - __main__ - INFO - Request to https://indiankanoon.org/search/: Status 200
+2025-05-10 23:46:25,035 - __main__ - ERROR - Error generating legal advice: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-05-10 23:46:25,758 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:46:25] "POST /analyze HTTP/1.1" 200 -
+2025-05-10 23:46:25,790 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:46:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 23:46:25,811 - werkzeug - INFO - 127.0.0.1 - - [10/May/2025 23:46:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
